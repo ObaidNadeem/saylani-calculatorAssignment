@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body">
+            <div class="calc-screen">
+
+                <input id="result" class="calc-typed" placeholder="Enter Digit" />
+            </div>
+            <div class="calc-button-row">
+                <div class="button c" onclick="clearDisplay()">C</div>
+                <div class="button l" onclick="getNumber('!=')">≠</div>
+                <div class="button l" onclick="getNumber('%')">%</div>
+                <div class="button l" onclick="getNumber('/')">/</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="getNumber('7')">7</div>
+                <div class="button" onclick="getNumber('8')">8</div>
+                <div class="button" onclick="getNumber('9')">9</div>
+                <div class="button l" onclick="getNumber('*')">x</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="getNumber('4')">4</div>
+                <div class="button" onclick="getNumber('5')">5</div>
+                <div class="button" onclick="getNumber('6')">6</div>
+                <div class="button l" onclick="getNumber('-')">−</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="getNumber('1')">1</div>
+                <div class="button" onclick="getNumber('2')">2</div>
+                <div class="button" onclick="getNumber('3')">3</div>
+                <div class="button l" onclick="getNumber('+')">+</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="getNumber('.')">.</div>
+                <div class="button" onclick="getNumber('0')">0</div>
+                <div class="button" onclick="getNumber(',')">,</div>
+                    <div class="button l" onclick="getResult()">=</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
